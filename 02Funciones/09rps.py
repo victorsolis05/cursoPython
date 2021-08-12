@@ -22,7 +22,7 @@ while keepOn == 1:
     humanChoise = int(
         input(f"{Fore.RED}Selecciona tu jugada: piedra (0), papel (1), tijera (2) >{Style.RESET_ALL}"))
     humanChoise = opciones[humanChoise]
-    print(f'''
+    print(f'''{Fore.YELLOW}
        Tu rival eligió: {computerChoise}
        Tu elegiste : {humanChoise}
     ''')
@@ -53,7 +53,7 @@ while keepOn == 1:
     else:
         print("Error opción no válida")
     # TODO: imprimir estadisticas
-    print(f'''
+    print(f'''{Style.RESET_ALL}{Fore.GREEN}
 =======================RESULTADOS DE TU DUELO===================================:
         Total de encuentros: {games}
         Veces que te ganaron : {computerWins} ({ (computerWins / games) * 100 } %)
@@ -62,7 +62,7 @@ while keepOn == 1:
         Que tiraste: {trackHumano}
         Ni a cual irle: {ties}
 =================================================================================
-    ''')
-    keepOn = int(input("¿Continuar tu duelo? (1) Sí (2) No >"))
+    {Style.RESET_ALL}''')
+    keepOn = int(input(f"{Fore.RED}¿Continuar tu duelo? (1) Sí (2) No >{Style.RESET_ALL}"))
 print("\n")
-print("===========================GRACIAS POR JUGAR================================")
+print(f"{Fore.BLUE}===========================GRACIAS POR JUGAR================================{Style.RESET_ALL}")
