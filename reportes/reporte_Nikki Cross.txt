@@ -1,0 +1,7 @@
+
+======================Estadisticas luchador==============================
+Nombre: Nikki Cross
+Pct Victorias: 0.6 %
+Pct Derrotas: 0.4%
+Pct Empates: 0.0%
+Tipo de luchador: aspirante 

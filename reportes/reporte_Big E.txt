@@ -1,0 +1,7 @@
+
+======================Estadisticas luchador==============================
+Nombre: Big E
+Pct Victorias: 77.0 %
+Pct Derrotas: 22.3%
+Pct Empates: 0.7%
+Tipo de luchador: superEstrella 

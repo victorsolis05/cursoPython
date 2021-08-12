@@ -1,0 +1,7 @@
+
+======================Estadisticas luchador==============================
+Nombre: Noah Potjes
+Pct Victorias: 23.1 %
+Pct Derrotas: 76.9%
+Pct Empates: 0.0%
+Tipo de luchador: aspirante 
