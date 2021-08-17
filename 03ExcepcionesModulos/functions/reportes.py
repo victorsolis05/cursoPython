@@ -3,6 +3,7 @@ import os
 
 tipo = lambda victoria : "superEstrella" if victoria > 50.0 else "aspirante"
 
+
 def generarReporte(row):
     #nombre, indicadores  = row[:1], row[1:]
     #wrestler, wins, losses, draws = row
@@ -10,9 +11,10 @@ def generarReporte(row):
     wrestler = row[:1]
     wins, losses, draws = list(map(int, row[1:]))
     total = wins + losses + draws
-    wins = round((wins * 100) / total , 1)
-    losses = round((losses * 100) / total , 1)
-    draws = round((draws * 100) / total , 1)
+    porcentaje = lambda cantidad : round((cantidad * 100) / total , 1)
+    wins, losses, draws = list(map(porcentaje, [wins,losses,draws])) 
+    #losses = porcentaje(losses , total)
+    #draws = porcentaje(draws , total)
     return f'''
 ======================Estadisticas luchador==============================
 Nombre: {wrestler[0]}
