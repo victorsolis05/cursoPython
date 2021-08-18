@@ -46,8 +46,7 @@ with open("./data/election_data.txt") as csvfile:
 # Query a la base de datos
 
 resultados = session.query(Voto.candidate, func.count(Voto.id)).group_by(Voto.candidate).all()
-for x in resultados:
-    print(x.name)
+print(resultados)
 
 session.close()
 engine.dispose()
